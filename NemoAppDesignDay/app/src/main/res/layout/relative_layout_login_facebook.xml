@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+        android:src="@drawable/facebook2" />
+    <RelativeLayout
+        android:id="@+id/container_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_below="@id/main_image"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:id="@+id/languange_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tvBhs1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/Bahasa1" />
+
+            <TextView
+                android:id="@+id/bullet1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/tvBhs1"
+                android:text="@string/bullet" />
+
+            <TextView
+                android:id="@+id/bahasa2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/bullet1"
+                android:text="@string/Bahasa2" />
+
+            <TextView
+                android:id="@+id/bullet2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/bahasa2"
+                android:text="@string/bullet" />
+
+            <TextView
+                android:id="@+id/tvMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlueDark"
+                android:layout_toRightOf="@id/bullet2"
+                android:text="@string/more" />
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/tvPhoneOrEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/languange_text"
+            android:hint="Phone or Email"
+            />
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPhoneOrEmail"
+            android:hint="Password"
+            />
+        <Button
+            android:id="@+id/btnLogIn"
+            android:layout_marginTop="@dimen/margin_top_inner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorFBDark"
+            android:textColorHint="@color/colorFBLight"
+            android:layout_below="@id/edtPassword"
+            android:hint="LOG IN"
+            />
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/btnLogIn"
+            android:text="FORGOT PASSWORD?"
+            android:layout_marginTop="@dimen/margin_top_inner"
+            />
+        <ImageView
+            android:id="@+id/orDivider"
+            android:layout_marginTop="@dimen/margin_top_inner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvForgotPassword"
+            android:src="@drawable/or"
+            />
+        <Button
+            android:id="@+id/btnCreateNewAccount"
+            android:layout_marginTop="@dimen/margin_top_inner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGreen"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/orDivider"
+            android:text="Create New Facebook Account"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

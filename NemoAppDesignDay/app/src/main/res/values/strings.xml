@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Nemo App</string>
+    <string name="Bahasa1">Bahasa Indonesia</string>
+    <string name="bullet">\u2022</string>
+    <string name="Bahasa2">Espa\u0148ol</string>
+    <string name="more">More...</string>
+</resources>
