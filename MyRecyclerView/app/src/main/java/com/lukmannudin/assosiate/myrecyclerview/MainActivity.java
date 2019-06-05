@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setActionBarTitle("Mode List");
+
         rvCategory = findViewById(R.id.rv_category);
         rvCategory.setHasFixedSize(true);
 
@@ -39,11 +40,11 @@ public class MainActivity extends AppCompatActivity {
         String title = null;
         switch (item.getItemId()){
             case R.id.action_list:
-                showRecyclerList();
+//                showRecyclerList();
                 title = "Mode List";
                 break;
             case R.id.action_grid:
-                showRecyclerGrid();
+//                showRecyclerGrid();
                 title = "Mode Grid";
                 break;
             case R.id.action_cardView:
